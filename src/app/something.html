@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html ng-app="green-stand">
+  <head>
+
+    <title>GreenStand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+<!-- js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular-route.js"></script>
+
+<!-- local js files -->
+    <script src="/js/green-stand.module.js" charset="utf-8"></script>
+    <script src="/js/green-stand.main.controller.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div class="title-bar" data-responsive-toggle="main-header" data-hide-for="medium">
+      <div class="row">
+        <div class="small-6 columns">
+          <ul class="menu">
+            <li class="menu-text">
+              <img src="./images/logo-36px.svg" alt="GreenStand">
+            </li>
+            <li class="menu text brand-text">
+              <h5>GreenStand</h5>
+            </li>
+          </ul>
+        </div>
+        <div class="small-2 columns">
+          <ul class="menu">
+            <li class="menu-text">
+              <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="main-header">
+      <div class="medium-4 columns">
+        <a ng-href="#!/">
+          <img class="logo" src="./images/logo-144px.png" alt="GreenStand">
+        </a>
+      </div>
+      <div class="medium-8 columns">
+        <h4 class="header-sub-text">Nurturing nature and social welfare from the roots up.</h4>
+      </div>
+
+      <div class="row">
+        <div class="medium-12 columns" id="main-nav">
+          <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+            <li class="menu-text brand-text">
+              <h2>GreenStand</h2>
+            </li>
+            <li><a ng-href="#!/">Home</a></li>
+            <li><a ng-href="#!/about">About</a></li>
+            <li><a ng-href="#!/tree-tracker">Tree Tracker</a></li>
+            <li><a ng-href="#!/get-involved">Get Involved</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- <header class="title-bar">
+      <a ng-href="#!/">
+        <img class="logo" src="./images/logo.jpeg" alt="">
+      </a>
+
+    <div class="small-12 medium-9 large-10 column">
+      <h1 class="header-text">GreenStand</h1>
+      <h4 class="header-sub-text">Nurturing nature and social welfare from the roots up.</h4>
+    </div>
+
+  </header>
+  <nav>
+    <ul class="menu small-12 columns">
+      <li class="menu-text brand-text">
+          <h2>GreenStand</h2>
+      </li>
+      <li class="nav-link">
+        <a ng-href="#!/">
+          Home
+        </a>
+      </li>
+      <li class="nav-link">
+        <a ng-href="#!/about">
+          About  GreenStand
+        </a>
+      </li>
+      <li class="nav-link">
+        <a ng-href="#!/tree-tracker">
+          TreeTracker Project
+        </a>
+      </li>
+      <li class="nav-link">
+        <a ng-href="#!/get-involved">
+          Get Involved
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+
+    <ng-view>See the app...</ng-view>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/plugins/foundation.util.mediaQuery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/plugins/foundation.util.triggers.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

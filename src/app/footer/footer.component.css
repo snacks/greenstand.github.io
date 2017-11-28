@@ -1,0 +1,18 @@
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  padding-left: 28px;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: none;
+}

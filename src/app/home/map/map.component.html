@@ -1,0 +1,20 @@
+<div class="map-container">
+  <p class="overlay-text">{{ title }}</p>
+  <agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    [disableDefaultUI]="ui"
+    [zoomControl]="zoomControl"
+    [scrollwheel]="scrollWheel"
+    [mapTypeId]="mapType"
+    (centerChange)="centerChanged($event)">
+
+    <agm-marker
+      *ngFor="let tree of trees"
+      [latitude]="tree.lat"
+      [longitude]="tree.lng"
+      [iconUrl]="markerUrl">
+    </agm-marker>
+  </agm-map>
+</div>

@@ -1,0 +1,114 @@
+.header-text {
+    color: #56320a;
+    /* color: #020202; */
+    font-family: 'Homemade Apple', cursive;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 675px;
+    margin: 0 auto;
+    padding: 2.5rem 0 1.5rem 0;
+}
+
+.brand-text-container {
+    display: inline-block;
+    max-width: 400px;
+    padding-left: 1.5rem;
+}
+
+nav h3 {
+    margin: 0;
+}
+
+.tag-line {
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(79, 49, 14);
+}
+
+/* large-screens */
+@media screen and (min-width: 1024px) {
+    .small-screen {
+        display: none;
+    }
+    .nav-logo {
+        width: 200px;
+    }
+    nav h3 {
+        font-size: 5rem;
+    }
+}
+
+/* medium-to-big screens */
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+    nav {
+        max-width: 450px;
+        padding: 2rem 0 1rem 0;
+    }
+    .tag-line {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-logo {
+        width: 150px;
+    }
+
+    nav h3 {
+        font-size: 4rem;
+    }
+
+    .tag-line {
+        font-size: 2rem;
+    }
+}
+
+/* medium-screens */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .small-screen {
+        display: none;
+    }
+    nav {
+        max-width: 450px;
+        padding: 1rem 0 1rem 0;
+    }
+    .nav-logo {
+        width: 100px;
+    }
+    nav h3 {
+        font-size: 3rem;
+    }
+
+    .tag-line {
+        font-size: 1.5rem;
+    }
+}
+
+/* small-screens */
+@media screen and (max-width: 500px) {
+    nav {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+    .medium-screen {
+        display: none;
+    }
+
+    .nav-logo {
+        width: 60px;
+    }
+
+    nav h3 {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .tag-line {
+        font-size: 1.125rem;
+    }
+}
