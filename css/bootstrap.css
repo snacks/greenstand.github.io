@@ -6319,7 +6319,7 @@ button.close {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 10%;
   font-size: 20px;
   color: #fff;
   text-align: center;
@@ -6418,9 +6418,9 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
+  /*right: 15%;*/
+  top: 20px;
+  left: 5%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -6451,7 +6451,7 @@ button.close {
   }
   .carousel-caption {
     right: 20%;
-    left: 20%;
+    left: 10%;
     padding-bottom: 30px;
   }
   .carousel-indicators {

@@ -63,6 +63,11 @@ hidden from bootstrap original for responsiveness
   height: 500px;
 }*/
 
+.carousel-inner > .item > img {
+	min-height:100%;
+	min-width:100%;
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
