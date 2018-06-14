@@ -66,6 +66,7 @@ hidden from bootstrap original for responsiveness
 .carousel-inner > .item > img {
 	min-width:100%;
 	min-height:100%;
+	max-width: none;
 }
 
 
