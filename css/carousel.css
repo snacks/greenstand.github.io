@@ -39,7 +39,8 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: auto;
+	max-height: 500px;
   margin-bottom: 60px;
 margin-top:51px;
 }
@@ -48,9 +49,10 @@ margin-top:51px;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* Declare heights because of positioning of img element max height should actually just be in the desktop version or?*/
 .carousel .item {
-  height: 500px;
+  height: auto;
+	max-height: 500px;
   background-color: #777;
 }
 /*
@@ -66,6 +68,7 @@ hidden from bootstrap original for responsiveness
 .carousel-inner > .item > img {
 	min-height:100%;
  	min-width:100%;
+	
 }
 
 
